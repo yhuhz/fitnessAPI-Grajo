@@ -18,9 +18,9 @@ const corsOptions = {
   origin: [
     'http://localhost:8000',
     'http://localhost:3000',
-    'https://fitnessapp-client-five.vercel.app/',
-    'https://fitnessapp-client-git-master-julius-albert-grajos-projects.vercel.app/',
-    'https://fitnessapp-client-frq3f9sdv-julius-albert-grajos-projects.vercel.app/',
+    'https://fitnessapp-client-five.vercel.app',
+    'https://fitnessapp-client-git-master-julius-albert-grajos-projects.vercel.app',
+    'https://fitnessapp-client-frq3f9sdv-julius-albert-grajos-projects.vercel.app',
   ],
   credentials: true,
   optionsSuccessStatus: 200,
