@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 const userRoutes = require('./routes/user');
 const workoutRoutes = require('./routes/workout');
 
-const port = 4000;
 const app = express();
 
 mongoose.connect(process.env.MONGODB_STRING);
@@ -18,10 +17,10 @@ app.use(express.json());
 app.use('/users', userRoutes);
 app.use('/workouts', workoutRoutes);
 
-if (require.main === module) {
-  app.listen(process.env.PORT, () =>
-    console.log(`API is now online on port ${process.env.PORT}`)
-  );
-}
+// if (require.main === module) {
+//   app.listen(process.env.PORT, () =>
+//     console.log(`API is now online on port ${process.env.PORT}`)
+//   );
+// }
 
-module.exports = { app, mongoose };
+// module.exports = { app, mongoose };
